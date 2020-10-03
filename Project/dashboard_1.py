@@ -226,6 +226,7 @@ def render_content(tab):
                         html.H3("Current India's COVID-19 Data"),
                     ])
                 ),
+                html.Div([
                 html.Div([html.Div([
                     html.P("Confirmed", className='text'),
                     html.P(children=sum_of_confirmed_cases(),
@@ -255,7 +256,7 @@ def render_content(tab):
                     )],
                     id="info-container",
                     className="row container-display",
-                ),
+                ),],id='covid_info_padding'),
 
                 html.Div(
                     children=html.Div([
@@ -298,7 +299,7 @@ def render_content(tab):
 
                             ],
                         )
-                    ])
+                    ],id='table_padding')
                 ),
                 html.Div(className="",
                          children=html.Div([
@@ -329,7 +330,7 @@ def render_content(tab):
                              html.Div([
                                  dcc.Graph(id='linechart'),
                              ]),
-                         ]),
+                         ],id='pie_chart_padding'),
                          ),
                 html.Div(className="pie_and_line_chart",
                          children=html.Div([
@@ -347,7 +348,7 @@ def render_content(tab):
 
                                  ])
                              ]),
-                         ]),
+                         ],id='bar_chart_padding'),
                     ),
             ]),
         ])

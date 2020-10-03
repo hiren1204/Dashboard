@@ -78,9 +78,30 @@ float:left;
 width:50%;	
 height:400px;
 }
+#covid_info_padding{
+     padding-left: 30px;
+     padding-right: 30px;
+
+}
+#table_padding{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#bar_chart_padding{
+    padding-right: 30px;
+    padding-left: 15px;
+}
+#pie_chart_padding{
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
 
 .covid_line_graph_dropdown_1{
 padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .mini_container {
